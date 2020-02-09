@@ -17,7 +17,6 @@ for td in gdp_table_data[0].find_all("td"):
     # remove any newlines and extra spaces from left and right
     headings.append(td.b.text.replace('\n', ' ').strip())
 
-print(headings)
 
 data = {}
 for table, heading in zip(gdp_table_data[1].find_all("table"), headings):
